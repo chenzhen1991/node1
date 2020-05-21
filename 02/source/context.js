@@ -1,15 +1,15 @@
 module.exports = {
     get url () {
-        return this.request._body
+        return this.request.url
     },
     get body () {
-        return this.response._body
+        return this.response.body
     },
 
-    set method (val) {
-        this.response._body = val
+    set body (val) {
+        this.response.body = val
     },
     get method () {
-        return this.request._body
+        return this.request.method
     },
 }

@@ -1,9 +1,9 @@
-module.exports = {
-    get url () {
+module.exports ={
+    get url(){
         return this.req.url
     },
 
-    get method () {
-        return this.req.method.toLocaleLowerCase()
+    get method(){
+        return this.req.method.toLowerCase()
     }
 }
