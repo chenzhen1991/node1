@@ -18,6 +18,24 @@
 //
 // console.log(fn(2,3))
 
+function compose (middlewares) {
+    return function() {
+        return dispatch(0)
+        function dispatch(i) {
+            let fn = middlewares[i]
+            if(!fn){
+                return middlewares[i]
+            }
+            return Promise.resolve(
+                fn(function next() {
+                    // 执行下一个
+                    return dispatch(i + 1)
+                })
+            )
+        }
+    }
+}
+
 async function fn1(next) {
     console.log('fn1');
     await next()
