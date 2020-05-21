@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.12.0"
+    "koa": "^2.12.0",
+    "telnet": "0.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

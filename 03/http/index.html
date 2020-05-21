@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>我是页面</div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    (async () => {
+        console.log(333)
+        const res = await axios.get('/api/users');
+        console.log('data', res.data)
+        document.writeln(`{Response: ${JSON.stringify(res.data)}}`)
+    })
+</script>
+</html>
