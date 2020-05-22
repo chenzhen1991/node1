@@ -9,11 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@koa/router": "^8.0.8",
     "express": "^4.17.1",
     "koa": "^2.12.0",
+    "koa-bodyparser": "^2.5.0",
+    "koa-static": "^5.0.0",
     "telnet": "0.0.1"
   },
   "devDependencies": {
+    "http-proxy-middleware": "^1.0.4",
     "nodemon": "^2.0.4"
   }
 }

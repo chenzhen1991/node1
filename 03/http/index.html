@@ -6,19 +6,29 @@
 </head>
 <body>
     <div>我是页面</div>
+    <form action="/api/save" method="post">
+        <input type="text" name="abc" value="123">
+        <input type="submit" value="save">
+    </form>
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script>
-    (async () => {
-        console.log(333)
-        axios.defaults.baseURL = 'http://localhost:4000'
-        const res = await axios.get("/api/users")
-        console.log('data',res.data)
-        document.writeln(`Response : ${JSON.stringify(res.data)}`)
-    })()
+<!--<script>-->
+<!--    (async () => {-->
+<!--        console.log(333)-->
+<!--        //跨域-->
+<!--        // axios.defaults.baseURL = 'http://localhost:4000'-->
+<!--        // axios.defaults.withCredentials = true-->
+<!--        const res = await axios.get("/api/users",{-->
+<!--            headers:{-->
+<!--                'X-Token':'wo'-->
+<!--            }-->
+<!--        })-->
+<!--        console.log('data',res.data)-->
+<!--        document.writeln(`Response : ${JSON.stringify(res.data)}`)-->
+<!--    })()-->
 
-    //埋点数据
-    // const img = new Image()
-    // img.src = './wwww'
-</script>
+<!--    //埋点数据-->
+<!--    // const img = new Image()-->
+<!--    // img.src = './wwww'-->
+<!--</script>-->
 </html>
