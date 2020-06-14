@@ -18,4 +18,12 @@ module.exports = {
     enable: true,
     package: 'egg-mongoose',
   },
+  bcrypt: {
+    enable: true,
+    package: 'egg-bcrypt',
+  },
+  jwt: {
+    enable: true,
+    package: 'egg-jwt',
+  },
 };

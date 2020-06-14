@@ -22,9 +22,15 @@ class UserController extends Controller {
 
     // 接口校验
     ctx.validate(ctx.rule.createUserRequest);
-    const res = {
-      abc: 123,
-    };
+    // const res = {
+    //   abc: 123,
+    // };
+    // 组装参数
+    const payload = ctx.request.body || {};
+
+    // 调用Service
+    const res = await this.service.user.create(payload);
+    
     // 设置响应内容
     ctx.helper.success({ ctx, res });
   }
