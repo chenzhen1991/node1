@@ -12,6 +12,7 @@
     "@koa/router": "^8.0.8",
     "cheerio": "^1.0.0-rc.3",
     "egg-sequelize": "^5.2.1",
+    "egg-swagger-doc-feat": "^2.2.13",
     "express": "^4.17.1",
     "iconv-lite": "^0.5.1",
     "koa": "^2.12.0",
